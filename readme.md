@@ -2,9 +2,9 @@
 ## Build and Run the PetClinic application
 1. Login to the Jenkins with credentials provided in the email [Jenkins](http://jenkins-thilak.westus2.cloudapp.azure.com:8080/job/spring-petclinic/). You can refer to the inline comments in the jenkinsfile for detailed high level steps with explanation.
 2. Build the Jenkins job. Jenkins build have three stages with optional integrations
-   Stage 1 : Checkout source code
-   Stage 2. Using maven, the code is being compiled, run through test cases, package the code and publish the artifacts to Artifactory. Optional Build info publish to jfrog artifactory
-   Stage 3: The Application is containerized using docker container and using the Dockerfile in the Github repo, the app is build in docker and pushed to Dockerhub
+   * Stage 1 : Checkout source code
+   * Stage 2. Using maven, the code is being compiled, run through test cases, package the code and publish the artifacts to Artifactory. Optional Build info publish to jfrog artifactory
+   * Stage 3: The Application is containerized using docker container and using the Dockerfile in the Github repo, the app is build in docker and pushed to Dockerhub
    
    
 
