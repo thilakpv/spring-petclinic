@@ -5,17 +5,21 @@ pipeline{
         maven 'mvn362'
     }
     stages{
+        stage('checkout'){
+            steps{
+                //check out code
+                git branch: 'main', url: 'https://github.com/thilakpv/spring-petclinic.git'
+            }
+        }
         stage('build'){
             steps{
             //Optional: Jfrog Artifactory Integration
-            rtServer (
+                rtServer (
                     id: "jfrog-artifactory",
                     url: "http://jfrog-thilak.westus.cloudapp.azure.com:8082/artifactory",
                     credentialsId: "jfrog",
                     bypassProxy: true
-            )
-                //check out code
-                git branch: 'main', url: 'https://github.com/thilakpv/spring-petclinic.git'
+                )
                 //compile, test, package and deploy the code to self hosted artifactory
                 sh 'mvn deploy -Dcheckstyle.skip'
                 //Optional: Publish the build info to jfrog artifactory test instance
