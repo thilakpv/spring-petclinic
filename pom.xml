@@ -314,17 +314,6 @@
       </snapshots>
     </pluginRepository>
   </pluginRepositories>
-  <distributionManagement>
-        <snapshotRepository>
-            <id>snapshot</id>
-            <url>http://jfrog-thilak.westus.cloudapp.azure.com:8082/artifactory/mvn-snapshot-local</url>
-        </snapshotRepository>
-        <repository>
-            <id>release</id>
-            <url>http://jfrog-thilak.westus.cloudapp.azure.com:8082/artifactory/mvn-release-local</url>
-        </repository>
-    </distributionManagement>
-
   <profiles>
     <profile>
       <id>m2e</id>
