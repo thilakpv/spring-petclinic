@@ -383,14 +383,16 @@
     </profile>
   </profiles>
   <distributionManagement>
-       <snapshotRepository>
-            <id>snapshot</id>
-            <url>http://jfrog-thilak.westus.cloudapp.azure.com:8082/artifactory/mvn-snapshot-local</url>
-       </snapshotRepository>
-       <repository>
-            <id>release</id>
-            <url>http://jfrog-thilak.westus.cloudapp.azure.com:8082/artifactory/mvn-release-local</url>
-       </repository>
-  </distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>jfrog-releases</name>
+        <url>http://jfrog-thilak.westus.cloudapp.azure.com/artifactory/mvn-release-local</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>jfrog-snapshots</name>
+        <url>http://jfrog-thilak.westus.cloudapp.azure.com/artifactory/mvn-release-local</url>
+    </snapshotRepository>
+</distributionManagement>
 
 </project>
