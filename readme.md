@@ -9,6 +9,10 @@
    ```
    docker pull thilakvenkata/spring-petclinic:2.4.5
    ```
+4. Run the docker image using following command
+   ```
+   docker run -d 
+
       
 
 ## Understanding the Spring Petclinic application with a few diagrams
