@@ -386,12 +386,12 @@
     <repository>
         <id>central</id>
         <name>jfrog-releases</name>
-        <url>http://jfrog-thilak.westus.cloudapp.azure.com/artifactory/mvn-release-local</url>
+        <url>http://jfrog-thilak.westus.cloudapp.azure.com:8082/artifactory/mvn-release-local/</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
         <name>jfrog-snapshots</name>
-        <url>http://jfrog-thilak.westus.cloudapp.azure.com/artifactory/mvn-release-local</url>
+        <url>http://jfrog-thilak.westus.cloudapp.azure.com:8082/artifactory/mvn-snapshot-local/</url>
     </snapshotRepository>
 </distributionManagement>
 
