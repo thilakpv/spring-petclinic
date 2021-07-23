@@ -5,6 +5,10 @@
    * Stage 1 : Checkout source code
    * Stage 2. Using maven, the code is being compiled, run through test cases, package the code and publish the artifacts to Artifactory. Optional Build info publish to jfrog artifactory. The artifact is published to [Jfrog Artifactory](http://jfrog-thilak.westus.cloudapp.azure.com:8082/ui/repos/tree/General/mvn-release-local)
    * Stage 3: The Application is containerized using docker container and using the Dockerfile in the Github repo, the app is build in docker and pushed to Dockerhub. You can find the docker image in [dockerhub](https://hub.docker.com/repository/docker/thilakvenkata/spring-petclinic)
+3. Pull the docker image from Dockerhub 
+   ```
+   docker pull thilakvenkata/spring-petclinic:2.4.5
+   ```
       
 
 ## Understanding the Spring Petclinic application with a few diagrams
