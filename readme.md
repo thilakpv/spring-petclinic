@@ -11,8 +11,11 @@
    ```
 4. Run the docker image using following command
    ```
-   docker run -d 
+   docker run -d -p 8080:8080 thilakvenkata/spring-petclinic:2.4.5
+   ```
+5. Wait for 30sec for application to start up and hit localhost:8080 on your browser to launch the app
 
+  <img width="1042" alt="petclinic-screenshot" src="https://cloud.githubusercontent.com/assets/838318/19727082/2aee6d6c-9b8e-11e6-81fe-e889a5ddfded.png">
       
 
 ## Understanding the Spring Petclinic application with a few diagrams
